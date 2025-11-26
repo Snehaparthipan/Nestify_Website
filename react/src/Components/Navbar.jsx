@@ -1,51 +1,62 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [user, setUser] = useState(false)
-  const[drop,setDrop]=useState(false)
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
   return (
-    <div className='body'>
-      <nav className='navbar'>
-        <h1 className='logo'>Nestify</h1>
+    <div className="nav-container">
+      <nav className="navbar">
+        <h1 className="logo">Nestify</h1>
 
-        <ul className='nav-links'>
-            <Link className='li' to='/'>Home</Link>
-            <Link className='li' to='/about'>About</Link>
-            <Link className='li' to='/categories'>Categories<button className='drop-btn' onClick={() => setDrop(!drop)}>▼</button></Link>
-            <Link className='li' to='/contact'>Contact</Link>
-            <i className="fa-solid fa-cart-shopping"></i>
+        <ul className="nav-links">
+          <Link className="nav-item" to="/">Home</Link>
+          <Link className="nav-item" to="/about">About</Link>
+
+          <div className="dropdown-wrapper">
+            <p className="nav-item drop-btn" onClick={() => setDropdown(!dropdown)}>
+              Categories ▾
+            </p>
+
+            {dropdown && (
+              <ul className="dropdown-menu">
+                <Link className="drop-item" to="/kitchen">Kitchen</Link>
+                <Link className="drop-item" to="/bedroom">Bedroom</Link>
+                <Link className="drop-item" to="/dining">Dining Room</Link>
+                <Link className="drop-item" to="/living">Living Room</Link>
+              </ul>
+            )}
+          </div>
+
+          <Link className="nav-item" to="/contact">Contact</Link>
+          <i className="fa-solid fa-cart-shopping cart"></i>
         </ul>
 
-        <button className='menu-btn' onClick={() => setUser(!user)}>≡</button>
+        <button className="menu-btn" onClick={() => setMobileMenu(!mobileMenu)}>☰</button>
       </nav>
-    {drop && (
-        <ul className='dropdownmenu1'>
-          <Link className='items' to='/'>Kitchen</Link>
-          <Link className='items' to='/about'>Bedroom</Link>
-          <Link className='items' to='/categories'>Dinning Room</Link>
-          <Link className='items' to='/contact'>Living Room</Link>
+
+      {mobileMenu && (
+        <ul className="mobile-menu">
+          <Link className="mobile-item" to="/">Home</Link>
+          <Link className="mobile-item" to="/about">About</Link>
+
+          <button className="mobile-item drop-btn" onClick={() => setDropdown(!dropdown)}>
+            Categories ▾
+          </button>
+
+          {dropdown && (
+            <ul className="mobile-dropdown">
+              <Link className="drop-item" to="/kitchen">Kitchen</Link>
+              <Link className="drop-item" to="/bedroom">Bedroom</Link>
+              <Link className="drop-item" to="/dining">Dining Room</Link>
+              <Link className="drop-item" to="/living">Living Room</Link>
+            </ul>
+          )}
+
+          <Link className="mobile-item" to="/contact">Contact</Link>
         </ul>
       )}
-     
-      {user && (
-        <ul className='dropdown'>
-          <Link className='li1' to='/'>Home</Link>
-          <Link className='li1' to='/about'>About</Link>
-          <Link className='li1' to='/categories'>Categories<button className='drop-btn' onClick={() => setDrop(!drop)}>▼</button></Link>
-          {drop && (
-        <ul className='dropdownmenu'>
-          <Link className='items' to='/'>Kitchen</Link>
-          <Link className='items' to='/about'>Bedroom</Link>
-          <Link className='items' to='/categories'>Dinning Room</Link>
-          <Link className='items' to='/contact'>Living Room</Link>
-        </ul>
-      )}
-          <Link className='li1' to='/contact'>Contact</Link>
-        </ul>
-      )}
-      
     </div>
-  )
+  );
 }

@@ -29,7 +29,7 @@
   color: #2563eb;
 }
 
-/* ===== NAV LINKS ===== */
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -60,7 +60,7 @@
   width: 100%;
 }
 
-/* ===== DROPDOWN ===== */
+
 .dropdown-wrapper {
   position: relative;
 }
@@ -118,7 +118,7 @@
   border-radius: 5px;
 }
 
-/* ===== CART ICON ===== */
+
 .cart {
   font-size: 1.5rem;
   color: #374151;
@@ -130,7 +130,7 @@
   color: #2563eb;
 }
 
-/* ===== MOBILE MENU ===== */
+
 .menu-btn {
   display: none;
   font-size: 2rem;

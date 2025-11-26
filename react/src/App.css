@@ -22,7 +22,7 @@
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
- color: white;
+ color: black;
   letter-spacing: 1px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -41,7 +41,7 @@
 
 .nav-item {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 500;
   position: relative;
   padding: 8px 0;
@@ -72,7 +72,7 @@
   border: none;
   cursor: pointer;
   font-weight: 500;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -109,7 +109,7 @@
 .drop-item {
   padding: 12px 20px;
   text-decoration: none;
-  color: #374151;
+  color: black;
   font-weight: 500;
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -123,7 +123,7 @@
 .cart {
   position: relative;
   font-size: 22px;
-  color: white;
+  color: blue;
   margin-left: 20px;
   transition: color 0.3s;
 }
@@ -167,7 +167,7 @@
 .wishlist {
   position: relative;
   font-size: 22px;
-  color: white;
+  color: red;
   margin-left: 15px;
   transition: color 0.3s;
 }
@@ -357,82 +357,6 @@
 
 
 
-<<<<<<< HEAD
-.slider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px;
-  position: relative;
-  margin-top: 40px;
-}
-
-.slide {
-  width: 70%;
-  text-align: center;
-}
-
-.slide-img {
-  width: 100px;
-  border-radius: 16px;
-}
-
-.slide-title {
-  font-size: 32px;
-  font-weight: 600;
-  margin-top: 20px;
-}
-
-.slide-content {
-  margin-top: 15px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #555;
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.arrow {
-  font-size: 42px;
-  cursor: pointer;
-  padding: 20px;
-  user-select: none;
-  color: #333;
-  transition: 0.2s;
-}
-
-.arrow:hover {
-  transform: scale(1.1);
-}
-
-.left {
-  position: absolute;
-  left: 40px;
-}
-
-.right {
-  position: absolute;
-  right: 40px;
-}
-.two-card-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  gap: 40px;
-}
-
-.slide-card {
-  width: 50%;
-  text-align: center;
-}
-
-.slide-img {
-  width: 100%;
-  border-radius: 16px;
-}
-
-=======
 
 
 /* home */
@@ -473,4 +397,3 @@
   font-size: 35px;
   color: #e91e63;
 }
->>>>>>> 4056d0cd35b03b4c2bbd7c81f1e27f9313e9a954

@@ -17,7 +17,7 @@ export default function Home() {
     </div>
     <div className="whycontainer">
       <h2>Why choose us</h2>
-
+      <p>India’s only truly end to interior design agency bringing your dream home in reality</p>
       <div className="why-cards">
         {data.map((item, index) => (
           <div className="why-card" key={index}>

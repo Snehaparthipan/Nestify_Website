@@ -7,13 +7,8 @@ export default function Navbar() {
   const [wishlistOpen, setWishlistOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
 
-  // Example state for cart and wishlist items
-  const [cartItems, setCartItems] = useState([
-    // { name: "Sofa" }, { name: "Dining Table" }
-  ]);
-  const [wishlistItems, setWishlistItems] = useState([
-    // { name: "Bed" }, { name: "Chair" }
-  ]);
+  const [cartItems, setCartItems] = useState([]);
+  const [wishlistItems, setWishlistItems] = useState([]);
 
   return (
     <div className="nav-container">

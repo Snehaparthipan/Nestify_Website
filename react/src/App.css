@@ -397,3 +397,26 @@
   font-size: 35px;
   color: #e91e63;
 }
+
+/* getstarted */
+
+.getstarted img{
+  height: 450px;
+  width: 100%;
+  margin: 10px;
+}
+.insidecard{
+  color: white;
+  margin-top: -300px;
+  margin-left: 400px;
+  padding: 20px;
+  
+}
+.getbtn{
+  border: none;
+  background-color:#023047;
+  height: 40px;
+  width: 200px;
+  color: white;
+  border-radius: 10px;
+}

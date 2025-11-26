@@ -8,7 +8,6 @@ const data = [
   { icon: <i className="fa-solid fa-city"></i>, title: "100+ cities" },
 ];
 
-
 export default function Home() {
   return (
     <div className="body">
@@ -26,7 +25,18 @@ export default function Home() {
           </div>
         ))}
       </div>
-    </div></div>
+    </div>
+    <div className="getstarted">
+        <img src="https://i.postimg.cc/fRK42k5W/sofa.jpg" alt="" />
+        <div className="insidecard">
+            <h1>see. touch. experience.</h1>
+            <p>schedule a visit to our show homes to see what we can do!</p>
+            <button className="getbtn">Get Started</button>
+        </div>
+        
+
+    </div>
+    </div>
     
   );
 }

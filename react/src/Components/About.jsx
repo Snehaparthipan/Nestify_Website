@@ -29,13 +29,21 @@ export default function About() {
           <button className="consult-button">Request Consultation</button>
         </div>
         <div className="hero-right">
-          <img src="https://i.postimg.cc/Dwf5Y1Q0/sofa1.jpg" alt="Interior Design" className="hero-image" />
+          <img
+            src="https://i.postimg.cc/Dwf5Y1Q0/sofa1.jpg"
+            alt="Interior Design"
+            className="hero-image"
+          />
         </div>
       </div>
 
       <div className={`hero-container ${loaded ? "fade-in" : ""}`}>
         <div className="hero-right">
-          <img src="https://i.postimg.cc/Dwf5Y1Q0/sofa1.jpg" alt="Interior Design" className="hero-image" />
+          <img
+            src="https://i.postimg.cc/Dwf5Y1Q0/sofa1.jpg"
+            alt="Interior Design"
+            className="hero-image"
+          />
         </div>
         <div className="hero-left">
           <h4>

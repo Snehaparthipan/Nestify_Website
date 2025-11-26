@@ -1,16 +1,14 @@
 .nav-container {
   width: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
+  background-color: #0F172A;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  transition: all 0.3s ease;
+  height: 100px;
 }
-
-/* ===== MAIN NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -21,7 +19,7 @@
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #1f2937;
+ color: white;
   letter-spacing: 1px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -40,7 +38,7 @@
 
 .nav-item {
   text-decoration: none;
-  color: #374151;
+  color: white;
   font-weight: 500;
   position: relative;
   padding: 8px 0;
@@ -72,7 +70,7 @@
   border: none;
   cursor: pointer;
   font-weight: 500;
-  color: #374151;
+  color: white;
   display: flex;
   align-items: center;
   gap: 5px;

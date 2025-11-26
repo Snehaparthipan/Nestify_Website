@@ -1,13 +1,16 @@
+.body{
+  overflow-x: hidden;
+}
 .nav-container {
   width: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: #0F172A;
+  /* background-color: #0F172A; */
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
-  height: 100px;
+  /* z-index: 1000; */
+  /* height: 50px; */
 }
 .navbar {
   display: flex;
@@ -29,7 +32,7 @@
   color: #2563eb;
 }
 
-/* ===== NAV LINKS ===== */
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -60,7 +63,6 @@
   width: 100%;
 }
 
-/* ===== DROPDOWN ===== */
 .dropdown-wrapper {
   position: relative;
 }
@@ -118,26 +120,100 @@
   border-radius: 5px;
 }
 
-/* ===== CART ICON ===== */
 .cart {
-  font-size: 1.5rem;
-  color: #374151;
-  cursor: pointer;
-  transition: color 0.3s ease;
+  position: relative;
+  font-size: 22px;
+  color: white;
+  margin-left: 20px;
+  transition: color 0.3s;
 }
 
 .cart:hover {
-  color: #2563eb;
+  color: blue; 
 }
 
-/* ===== MOBILE MENU ===== */
+/* Cart Dropdown */
+.cart-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 10px;
+  z-index: 1000;
+  list-style: none;
+}
+
+.cart-dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #333;
+  cursor: default;
+}
+
+.cart-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.cart-dropdown li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Wishlist Icon */
+.wishlist {
+  position: relative;
+  font-size: 22px;
+  color: white;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.wishlist:hover {
+  color: #e91e63; 
+}
+
+/* Wishlist Dropdown */
+.wishlist-dropdown {
+  position: absolute;
+  top: 60px; 
+  right: 60px;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 10px;
+  z-index: 1000;
+  list-style: none;
+}
+
+.wishlist-dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #333;
+}
+
+.wishlist-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.wishlist-dropdown li:hover {
+  background-color: #f9f9f9;
+}
+
+
+
 .menu-btn {
   display: none;
   font-size: 2rem;
   background: none;
   border: none;
-  cursor: pointer;
-  color: #374151;
+  color: white;
 }
 
 .mobile-menu {
@@ -276,4 +352,47 @@
   .hero-right {
     margin-top: 30px;
   }
+}
+
+
+
+
+
+/* home */
+.ban{
+  width: 100%;
+  object-fit: contain;
+  margin: 5px;
+  
+}
+/* whychooseus */
+.whycontainer {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.why-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.why-card {
+  width: 180px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-icon {
+  font-size: 35px;
+  color: #e91e63;
 }

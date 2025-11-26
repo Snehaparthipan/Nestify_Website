@@ -4,6 +4,16 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [wishlistOpen, setWishlistOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
+
+  // Example state for cart and wishlist items
+  const [cartItems, setCartItems] = useState([
+    // { name: "Sofa" }, { name: "Dining Table" }
+  ]);
+  const [wishlistItems, setWishlistItems] = useState([
+    // { name: "Bed" }, { name: "Chair" }
+  ]);
 
   return (
     <div className="nav-container">
@@ -30,12 +40,50 @@ export default function Navbar() {
           </div>
 
           <Link className="nav-item" to="/contact">Contact</Link>
-          <i className="fa-solid fa-cart-shopping cart"></i>
+
+          {/* Cart Icon */}
+          <i
+            className="fa-solid fa-cart-shopping cart"
+            onClick={() => setCartOpen(!cartOpen)}
+          ></i>
+
+          {/* Wishlist Icon */}
+          <i
+            className="fa-solid fa-heart wishlist"
+            onClick={() => setWishlistOpen(!wishlistOpen)}
+          ></i>
         </ul>
 
         <button className="menu-btn" onClick={() => setMobileMenu(!mobileMenu)}>☰</button>
       </nav>
 
+      {/* Cart Dropdown */}
+      {cartOpen && (
+        <ul className="cart-dropdown">
+          {cartItems.length === 0 ? (
+            <li>Your cart is empty!</li>
+          ) : (
+            cartItems.map((item, index) => (
+              <li key={index}>{item.name}</li>
+            ))
+          )}
+        </ul>
+      )}
+
+      {/* Wishlist Dropdown */}
+      {wishlistOpen && (
+        <ul className="wishlist-dropdown">
+          {wishlistItems.length === 0 ? (
+            <li>Your wishlist is empty!</li>
+          ) : (
+            wishlistItems.map((item, index) => (
+              <li key={index}>{item.name}</li>
+            ))
+          )}
+        </ul>
+      )}
+
+      {/* Mobile Menu */}
       {mobileMenu && (
         <ul className="mobile-menu">
           <Link className="mobile-item" to="/">Home</Link>
@@ -55,6 +103,18 @@ export default function Navbar() {
           )}
 
           <Link className="mobile-item" to="/contact">Contact</Link>
+
+          {/* Mobile Cart */}
+          <i
+            className="mobile-item fa-solid fa-cart-shopping"
+            onClick={() => setCartOpen(!cartOpen)}
+          ></i>
+
+          {/* Mobile Wishlist */}
+          <i
+            className="mobile-item fa-solid fa-heart"
+            onClick={() => setWishlistOpen(!wishlistOpen)}
+          ></i>
         </ul>
       )}
     </div>

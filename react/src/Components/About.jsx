@@ -46,9 +46,9 @@ export default function About() {
           />
         </div>
         <div className="hero-left">
-          <h4>
-            <i class="fa-solid fa-dot"></i>From your imagination to reality
-          </h4>
+          <ul>
+            <li>From your imagination to reality</li>
+          </ul>
           <h1 className="hero-title">End to End Perfection</h1>
 
           <p className="hero-text">

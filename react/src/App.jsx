@@ -7,6 +7,7 @@ import { Routes,Route,BrowserRouter} from 'react-router-dom'
 import About from './Components/About'
 import Categories from './Components/Categories'
 import Contact from './Components/Contact'
+import './Home.css'
 
 
 function App() {

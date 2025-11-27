@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "./Footer";
 
 
 export default function Hero() {
@@ -96,6 +97,7 @@ export default function Hero() {
           <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

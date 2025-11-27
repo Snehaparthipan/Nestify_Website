@@ -276,7 +276,7 @@ body{
 .ban{
   width: auto;
   object-fit: contain;
-  /* margin: 1px; */
+  margin: 1px;
   overflow-x: hidden;
 }
 /* whychooseus */

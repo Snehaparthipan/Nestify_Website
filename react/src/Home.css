@@ -4,7 +4,7 @@ body{
 .nav-container {
   width: 100%;
   font-family: "Poppins", sans-serif;
-  /* background-color: #0F172A; */
+  background-color: #0f172a;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
@@ -17,13 +17,13 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 5px 50px;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
- color: black;
+ color: white;
   letter-spacing: 1px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -42,7 +42,7 @@ body{
 
 .nav-item {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 501;
   position: relative;
   padding: 8px 0;
@@ -73,7 +73,7 @@ body{
   border: none;
   cursor: pointer;
   font-weight: 500;
-  color: black;
+  color: white;
   display: flex;
   align-items: center;
   gap: 5px;

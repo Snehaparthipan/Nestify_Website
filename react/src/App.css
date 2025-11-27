@@ -97,7 +97,29 @@
   margin: 5px;
   
 }
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 45px;
+  cursor: pointer;
+  padding: 15px;
+  user-select: none;
+  transition: 0.3s ease;
+  color: #333;
+}
 
+.arrow:hover {
+  transform: translateY(-50%) scale(1.15);
+}
+
+.left {
+  left: 40px;
+}
+
+.right {
+  right: 40px;
+}
 
 
 .two-card-wrapper {

@@ -335,13 +335,22 @@ body{
 }
 
 /* accordian */
-.mainacco{
-    
+.mainacco h2{
+    text-align: center;
+    margin-top: 150px;
 }
 .acco{
+    align-content: center;
     width: 80%;
-    height: 150px;
-    margin: 100px;
-    background-color: #0230474a;
-    padding: 30px;
+    margin-left: 200px;
+    }
+.div1{
+    border: 1px solid grey;
+    /* margin-left: 130px; */
+    width: 80%;
+    margin: 10px;
+}
+.div1:hover{
+    border: none;
+    border: 5px solid blue;
 }

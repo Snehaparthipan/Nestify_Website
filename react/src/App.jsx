@@ -13,6 +13,7 @@ import Bedroom from "./Components/Bedroom";
 import Dinningroom from "./Components/Dinningroom";
 import Livingroom from "./Components/Livingroom";
 import Viewmore from './Components/Viewmore'
+import Success from './Components/Success'
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
             <Route path ="/living" element={<Livingroom/>}/>
             <Route path="/contact" element={<Contact />} />
             <Route path="/Viewmore" element={<Viewmore/>} />
+            <Route path="/success" element={<Success/>} />
+
           </Routes>
         </BrowserRouter>
       </div>

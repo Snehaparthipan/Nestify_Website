@@ -1,7 +1,8 @@
 import React,{useState}from 'react'
 import Footer from './Footer'
+import { Link } from 'react-router-dom';
 
-export default function Contact({setOut}) {
+export default function Contact() {
   const [state, setState] = useState({
     name: "",
     age: "",
@@ -14,14 +15,14 @@ export default function Contact({setOut}) {
     setState({ ...state, [e.target.name]: e.target.value });
   }
 
-  function getsubmit() {
-    setOut(state);
-  }
+  // function getsubmit() {
+  //   setOut(state);
+  // }
   return (
     <div className='body'>
       <div className="form-wrapper" style={{margin:'100px 0px 0px 0px'}}>
       <div className="form-card">
-        <h2 className="title">Bio-Data Form</h2>
+        <h2 className="title">Get in Touch</h2>
         <label>Name</label>
         <input 
           type="text"
@@ -30,11 +31,11 @@ export default function Contact({setOut}) {
           onChange={getinput}
         />
 
-        <label>Age</label>
+        <label>Service</label>
         <input 
-          type="number"
+          type="text"
           name="age"
-          placeholder="Enter your age"
+          placeholder="ex. Modular kitchen, living room,..."
           onChange={getinput}
         />
 
@@ -62,10 +63,9 @@ export default function Contact({setOut}) {
           onChange={getinput}
         />
 
-        <button className="submit-btn" onClick={getsubmit}>
-          Submit
+        <button className="submit-btn"><Link to='/success' style={{textDecoration:"none", color:'white'}}>Contact</Link>
         </button>
-        
+        {/* onClick={getsubmit} */}
       </div>
     </div>
      <Footer/>

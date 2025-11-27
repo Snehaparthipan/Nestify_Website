@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { ToastContainer,toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function About() {
   const [loaded, setLoaded] = useState(false);
@@ -68,6 +70,16 @@ export default function About() {
     return () => clearInterval(timer);
   }, [current]);
 
+   const showToastMessage = () => {
+      toast.success("Request sent Successfully !", {
+        position: "bottom-right"
+      });
+    };
+  const [isExpanded, setIsExpanded] = useState(false);
+const handleLearnMore = () => {
+  setIsExpanded(!isExpanded);
+};
+
   
   return (
     <>
@@ -87,7 +99,8 @@ export default function About() {
             your space and have it satisfy all of your needs.
           </p>
 
-          <button className="consult-button">Request Consultation</button>
+          <button className="consult-button" onClick={showToastMessage}>Request Consultation</button>
+          <ToastContainer />
         </div>
 
         <div className="hero-right">
@@ -111,21 +124,29 @@ export default function About() {
         </div>
 
         <div className="hero-left">
-          <h1 className="hero-title">End to End Perfection</h1>
+  <h1 className="hero-title">End to End Perfection</h1>
 
-          <p className="hero-text">
-            In our country, which is renowned for its arts and architecture,
-            people frequently face difficulties in realizing their dream homes.
-            They often seek help to bring their dreams to life, sometimes
-            resulting in unsatisfactory designs and quality. <br />
-            However, we are here to address all those challenges with our
-            cutting-edge facility that guarantees top-quality end to end
-            interior design services for your homes and offices. Our team of
-            professionals maintain highest standards, from design to delivery.
-          </p>
+  <p className="hero-text">
+    In our country, which is renowned for its arts and architecture,
+    people frequently face difficulties in realizing their dream homes.
+    They often seek help to bring their dreams to life, sometimes
+    resulting in unsatisfactory designs and quality.
+    {isExpanded && (
+      <span>
+        <br />
+        However, we are here to address all those challenges with our
+        cutting-edge facility that guarantees top-quality end to end
+        interior design services for your homes and offices. Our team of
+        professionals maintain highest standards, from design to delivery.
+      </span>
+    )}
+  </p>
 
-          <button className="consult-button">Learn More</button>
-        </div>
+  <button className="consult-button" onClick={handleLearnMore}>
+    {isExpanded ? "Show Less" : "Learn More"}
+  </button>
+</div>
+
       </div>
 
       <div className="slider-container">

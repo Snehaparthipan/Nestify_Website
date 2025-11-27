@@ -14,6 +14,7 @@ import Dinningroom from "./Components/Dinningroom";
 import Livingroom from "./Components/Livingroom";
 import Viewmore from './Components/Viewmore'
 import Success from './Components/Success'
+import Consultant from './Components/Consultant'
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/Viewmore" element={<Viewmore/>} />
             <Route path="/success" element={<Success/>} />
-
+            <Route path="/Consultant" element={<Consultant/>} />
           </Routes>
         </BrowserRouter>
       </div>

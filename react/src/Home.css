@@ -333,3 +333,15 @@ body{
   color: white;
   border-radius: 10px;
 }
+
+/* accordian */
+.mainacco{
+    
+}
+.acco{
+    width: 80%;
+    height: 150px;
+    margin: 100px;
+    background-color: #0230474a;
+    padding: 30px;
+}

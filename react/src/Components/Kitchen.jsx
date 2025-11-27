@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 
 
-export default function Hero() {
+export default function Kitchen() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {

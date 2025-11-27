@@ -365,44 +365,14 @@
 
 .slider-container {
   width: 100%;
-  position: relative;
-  text-align: center;
-  padding: 40px 0;
-  margin-top: 70px; 
+  object-fit: contain;
+  margin: 5px;
   
 }
-
-
-.slider-main-title {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #000;
-}
-
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 45px;
-  cursor: pointer;
-  padding: 15px;
-  user-select: none;
-  transition: 0.3s ease;
-  color: #333;
-}
-
-.arrow:hover {
-  transform: translateY(-50%) scale(1.15);
-}
-
-.left {
-  left: 40px;
-}
-
-.right {
-  right: 40px;
+/* whychooseus */
+.whycontainer {
+  text-align: center;
+  padding: 100px 20px;
 }
 
 

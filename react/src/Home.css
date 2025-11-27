@@ -379,7 +379,7 @@ body{
     padding: 20px 0px 20px;
     transition: 0.3s ease;
     text-align: center;
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
 .card1 img{
     object-fit: cover;

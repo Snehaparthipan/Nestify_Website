@@ -57,8 +57,10 @@ export default function Home() {
           </div>
           </div>
         </div>
-
-    <Footer/>
+        <div style={{margin:'400px 0px 0px 0px'}}>
+          <Footer/>
+        </div>
+    
     </div>
     
   );

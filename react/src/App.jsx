@@ -22,8 +22,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/kitchen" element={<Kitchen />} />
             <Route path="/bedroom" element={<Bedroom />} />
-            <Route path="/dining" element={<Dining Room />} />
-            <Route path="/living" element={<Living Room />} />
+            <Route path="/dining" element={<Diningroom/>} />
+            <Route path="/living" element={<Livingroom/>} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>

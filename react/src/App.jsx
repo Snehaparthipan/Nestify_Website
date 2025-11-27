@@ -8,7 +8,7 @@ import About from './Components/About'
 import Categories from './Components/Categories'
 import Contact from './Components/Contact'
 import './Home.css'
-import Kitchen from './Components/Kitchen'
+// import Kitchen from './Components/Kitchen'
 
 
 function App() {

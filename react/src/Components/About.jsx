@@ -131,7 +131,6 @@ export default function About() {
             <p className="slide-content">{slides[current].right.content}</p>
           </div>
         </div>
-
         <div className="arrow right" onClick={nextSlide}>
           →
         </div>

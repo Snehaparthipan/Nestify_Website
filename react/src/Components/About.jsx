@@ -73,8 +73,9 @@ export default function About() {
       <div className={`hero-container ${loaded ? "fade-in" : ""}`}>
         <div className="hero-left">
           <h1 className="hero-title">
-            Delightful Interiors, <br /> Made To Live
+            Delightful Interiors, <br /> Made To Live7
           </h1>
+
 
           <p className="hero-text">
             Homworks believes that designing an interior should be a holistic

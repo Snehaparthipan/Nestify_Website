@@ -43,7 +43,7 @@ body{
 }
 
 .consult-button {
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 14px 30px;
   background-color: #58a38c;
   border: none;
@@ -88,6 +88,49 @@ body{
 
   .hero-right {
     margin-top: 30px;
+  }
+  .hero-image{
+    margin-top: -50px;
+    align-content: center;
+  }
+
+  .consult-button{
+    margin-top: -20px;
+  }
+  .second-section {
+    display: flex;
+    flex-direction: row !important;  
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .second-section .hero-image {
+    width: 100%;
+    border-radius: 12px;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  .second-section .hero-title {
+    font-size: 22px;
+    margin-top: 50px;
+  }
+
+  .second-section .hero-text {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .second-section .consult-button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 13px;
   }
 }
 
@@ -150,6 +193,7 @@ body{
   height: auto;
   border-radius: 18px;
   margin-left: -80px;
+  margin-top: 30px;
 }
 
 
@@ -171,4 +215,10 @@ body{
   max-width: 95%;
   margin: 0 auto;
   margin-left: -40px;
+}
+
+@media (max-width: 900px) {
+  .slider-container{
+    margin-top: 200px;
+  }
 }

@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
-
+import React from 'react'
+import Footer from './Footer'
 
 export default function Hero() {
   const [show, setShow] = useState(false);
@@ -8,15 +8,10 @@ export default function Hero() {
   useEffect(() => {
     setTimeout(() => setShow(true), 200);
   }, []);
-=======
-import React from 'react'
-import Footer from './Footer'
->>>>>>> 463a7d604c5382251811002a0e45d47e029765b8
+
 
   return (
-<<<<<<< HEAD
     <>
-      
       <div className="topBannerImage">
         <img
           src="https://i.postimg.cc/ZRyzm44K/island2.jpg"
@@ -30,8 +25,6 @@ import Footer from './Footer'
           </h1>
         </div>
       </div>
-
-     
 
       <div className="islandShowcase">
         <div className="islandImgGroup">
@@ -102,12 +95,11 @@ import Footer from './Footer'
           <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
         </div>
       </div>
+      <div>
+        <Footer />
+      </div>
     </>
   );
-=======
-    <div>
-      <Footer/>
-    </div>
-  )
->>>>>>> 463a7d604c5382251811002a0e45d47e029765b8
+    
+  
 }

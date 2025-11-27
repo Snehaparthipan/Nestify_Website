@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import React from "react";
+import Footer from "./Footer";
 
 
 export default function Hero() {
@@ -7,8 +9,7 @@ export default function Hero() {
   useEffect(() => {
     setTimeout(() => setShow(true), 200);
   }, []);
-import React from 'react'
-import Footer from './Footer'
+
 
   return (
     <>
@@ -84,10 +85,4 @@ import Footer from './Footer'
         </div>
       </div>
       <div>
-        <Footer />
-      </div>
-    </>
-  );
-   
-  
-}
+ 

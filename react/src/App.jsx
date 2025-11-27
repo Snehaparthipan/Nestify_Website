@@ -12,6 +12,7 @@ import Kitchen from './Components/Kitchen'
 import Bedroom from "./Components/Bedroom";
 import Dinningroom from "./Components/Dinningroom";
 import Livingroom from "./Components/Livingroom";
+import Viewmore from './Components/Viewmore'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path= "/dining" element={<Dinningroom/>}/>
             <Route path ="/living" element={<Livingroom/>}/>
             <Route path="/contact" element={<Contact />} />
+            <Route path="/Viewmore" element={<Viewmore/>} />
           </Routes>
         </BrowserRouter>
       </div>

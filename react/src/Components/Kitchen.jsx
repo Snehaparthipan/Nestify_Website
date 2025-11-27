@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 
 export default function Kitchen() {
@@ -43,7 +44,7 @@ export default function Kitchen() {
             trends.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+          <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view more</Link></button>
         </div>
       </div>
       <div className="islandShowcase">

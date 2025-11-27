@@ -83,8 +83,7 @@ export default function Bedroom() {
           <button className="viewMoreBtn">view More</button>
         </div>
       </div>
-        <Footer />
-
+      <Footer style={{ margin: "-100px 0px 0px 0px" }} />
     </>
   );
    

@@ -11,36 +11,40 @@ export default function Livingroom() {
 
   return (
     <>
-      
       <div className="topBannerImage">
         <img
-          src="https://i.postimg.cc/ZRyzm44K/island2.jpg"
+          src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
           alt=""
           style={{ width: "100%", height: "610px" }}
         />
         <div className="topBannerTextBox">
           <h1>
-            Design the Heart of Your Home <br />
-            With a Kitchen That Reflects You
+            Luxury Living Room <br />
+            Elegantly Customized for Your Dream Home
           </h1>
         </div>
       </div>
 
-     
-
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img
+            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
+            alt="Island 1"
+          />
+          <img
+            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
+            alt="Island 2"
+          />
         </div>
 
         <div className="islandInfoBox">
-          <h2>Island Kitchen</h2>
+          <h2>Center Table</h2>
           <p>
-            Island kitchen series of modern designs from NESTIFY offers you a
-            wide range of selections to help the customer get the best idea.
-            These are different from the traditional style and towards the new
-            trends.
+            Centre table to be kept near the sofa set for a living room is
+            designed and custom-made by NESTIFY for flat or house. Customers
+            choose a suitable design from available on our website or showrooms
+            and customize it further to match the requirements and space
+            limitations.
           </p>
 
           <button className="viewMoreBtn">view More</button>
@@ -48,33 +52,42 @@ export default function Livingroom() {
       </div>
       <div className="islandShowcase">
         <div className="islandInfoBox">
-          <h2>L Shape Kitchen</h2>
+          <h2>LCD Display Unit</h2>
           <p>
-            L-shaped kitchens from NESTIFY are 100% customized to fit the space.
-            Various options are given below which can further be modified and
-            made as per a design finalized.
+            LCD Display Unit will be a centre of attraction in any living room
+            when it is beautifully designed and made in theme matching the whole
+            interiors. It can be further extended as a storage space in addition
+            to display of television, music system, video player etc.
           </p>
 
           <button className="viewMoreBtn">view More</button>
         </div>
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
+          <img
+            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
+            alt="Island 1"
+          />
           <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
         </div>
       </div>
       <div className="islandShowcase">
         <div className="islandImgGroup">
           <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img
+            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
+            alt="Island 2"
+          />
         </div>
 
         <div className="islandInfoBox">
-          <h2>Parallel Kitchen</h2>
+          <h2>Prayer Unit</h2>
           <p>
-            Parallel Kitchen Parallel kitchen is the concept of making cabinets
-            on both the longer sides, especially as per the suitability to the
-            space measured. Our interior designer would be able to help you
-            decide the shape, color, and finish by giving suggestions.
+            A Prayer unit may be difficult in a house or flat due to the space
+            constraints. But many of our clients have the requirement of a pooja
+            unit that can be fixed in a living room. Size and requirement may
+            vary and thus the design. It should match with the main theme of
+            living room interiors. Below are some of the patterns that we have
+            created but not limited only to these.
           </p>
 
           <button className="viewMoreBtn">view More</button>
@@ -82,22 +95,27 @@ export default function Livingroom() {
       </div>
       <div className="islandShowcase">
         <div className="islandInfoBox">
-          <h2>Straight Kitchen</h2>
+          <h2>Sofas</h2>
           <p>
-            Big space can accommodate a straight kitchen with differences from
-            commonly used styles. Best of the efforts are made by our team of
-            interior designers to provide unique ideas and concepts in making
-            modular kitchens to suit the space and match with the house.
+            D`LIFE can either make or buy a suitable sofa set for your living
+            room as part of the interior works contract. Designers will
+            recommend the options that would match the best with other parts of
+            home interiors. Genuine leather, artificial leather and fabric
+            styles of reputed brands are made available in our collection.
           </p>
 
           <button className="viewMoreBtn">view More</button>
         </div>
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
+          <img
+            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
+            alt="Island 1"
+          />
           <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
         </div>
       </div>
-      <Footer/>
+
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Accordian from "./Accordian";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 
 const data = [
@@ -34,6 +35,7 @@ export default function Home() {
             <p>schedule a visit to our show homes to see what we can do!</p>
             <button className="getbtn">Get Started</button>
         </div>
+        </div>
     <Accordian/>
     <div className="service">
           <h1>Our Sevices</h1>
@@ -56,7 +58,7 @@ export default function Home() {
           </div>
         </div>
 
-    </div>
+    <Footer/>
     </div>
     
   );

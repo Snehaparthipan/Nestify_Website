@@ -376,10 +376,13 @@ body{
 }
 .card1{
     height: 30px;
-    padding: 20px 0px 20px;
+    padding: 20px 10px 20px;
     transition: 0.3s ease;
     text-align: center;
+<<<<<<< HEAD
     /* margin-left: 60px; */
+=======
+>>>>>>> 463a7d604c5382251811002a0e45d47e029765b8
 }
 .card1 img{
     object-fit: cover;
@@ -426,4 +429,59 @@ body{
     height: 40px;
     border-radius: 10px;
     color: white;
+}
+.footer {
+  background: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 22px;
+  margin: 0 15px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-menu a,
+.footer-sub a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer-sub {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.footer-sub span {
+  margin: 0 6px;
+  color: #777;
+}
+
+.footer-bottom {
+  background: #5cad48;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-bottom small {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
 }

@@ -7,6 +7,8 @@ export default function Hero() {
   useEffect(() => {
     setTimeout(() => setShow(true), 200);
   }, []);
+import React from 'react'
+import Footer from './Footer'
 
   return (
     <>
@@ -26,14 +28,8 @@ export default function Hero() {
 
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img
-            src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg"
-            alt=""
-          />
-          <img
-            src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg"
-            alt=""
-          />
+          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
+          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
         </div>
 
         <div className="islandInfoBox">
@@ -64,14 +60,8 @@ export default function Hero() {
           <button className="viewMoreBtn">view More</button>
         </div>
         <div className="islandImgGroup">
-          <img
-            src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg"
-            alt=""
-          />
-          <img
-            src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg"
-            alt=""
-          />
+          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
+          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
         </div>
       </div>
       <div className="islandShowcase">
@@ -93,7 +83,11 @@ export default function Hero() {
           <button className="viewMoreBtn">view More</button>
         </div>
       </div>
-      
+      <div>
+        <Footer />
+      </div>
     </>
   );
+   
+  
 }

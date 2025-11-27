@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 
 
@@ -7,8 +8,13 @@ export default function Hero() {
   useEffect(() => {
     setTimeout(() => setShow(true), 200);
   }, []);
+=======
+import React from 'react'
+import Footer from './Footer'
+>>>>>>> 463a7d604c5382251811002a0e45d47e029765b8
 
   return (
+<<<<<<< HEAD
     <>
       
       <div className="topBannerImage">
@@ -98,4 +104,10 @@ export default function Hero() {
       </div>
     </>
   );
+=======
+    <div>
+      <Footer/>
+    </div>
+  )
+>>>>>>> 463a7d604c5382251811002a0e45d47e029765b8
 }

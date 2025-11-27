@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function About() {
   const [loaded, setLoaded] = useState(false);
@@ -151,6 +152,7 @@ export default function About() {
           →
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

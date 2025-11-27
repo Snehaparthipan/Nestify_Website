@@ -9,6 +9,9 @@ import Categories from './Components/Categories'
 import Contact from './Components/Contact'
 import './Home.css'
 import Kitchen from './Components/Kitchen'
+import Bedroom from './Components/Bedroom'
+import Dinningroom from "./Components/Dinningroom";
+import Livingroom from "./Components/Livingroom";
 
 
 function App() {
@@ -21,15 +24,15 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/kitchen" element={<Kitchen />} />
-            <Route path="/bedroom" element={<Bedroom />} />
-            <Route path="/dining" element={<Diningroom/>} />
-            <Route path="/living" element={<Livingroom/>} />
+            <Route path ="/bedroom" element={<Bedroom/>}/>
+            <Route path= "/dining" element={<Dinningroom/>}/>
+            <Route path ="/living" element={<Livingroom/>}/>
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
       </div>
     </>
-  );
+  )
 }
 
 export default App

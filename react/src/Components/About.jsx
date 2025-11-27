@@ -28,8 +28,21 @@ export default function About() {
         content: "Our experts plan your interiors with perfect measurements.",
       },
       right: {
-        image: "https://i.postimg.cc/QMvLpjBS/About1.jpg", 
+        image: "https://i.postimg.cc/QMvLpjBS/About1.jpg",
         title: "A Perfect Pallete",
+        content: "Our team is available anytime to help solve your concerns.",
+      },
+    },
+
+    {
+      left: {
+        image: "https://i.postimg.cc/QMvLpjBS/About1.jpg",
+        title: "Consummate Professionals",
+        content: "Our experts plan your interiors with perfect measurements.",
+      },
+      right: {
+        image: "https://i.postimg.cc/QMvLpjBS/About1.jpg",
+        title: "Top Notch Infrastructure",
         content: "Our team is available anytime to help solve your concerns.",
       },
     },
@@ -84,7 +97,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className={`hero-container ${loaded ? "fade-in" : ""}`}>
+      <div
+        className={`hero-container second-section ${loaded ? "fade-in" : ""}`}
+      >
         <div className="hero-right">
           <img
             src="https://i.postimg.cc/QMvLpjBS/About1.jpg"

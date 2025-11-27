@@ -322,18 +322,5 @@ body{
 
 
 
-@media (max-width: 900px) {
-  .islandShowcase {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .islandImgGroup {
-    justify-content: center;
-  }
-
-  .islandInfoBox {
-    max-width: 90%;
-  }
-}
 

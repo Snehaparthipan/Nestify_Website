@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <>
-      {/* TOP BANNER SECTION */}
+      
       <div className="topBannerImage">
         <img
           src="https://i.postimg.cc/ZRyzm44K/island2.jpg"
@@ -32,7 +32,8 @@ export default function Hero() {
         </h1>
       </div>
 
-      {/* ISLAND SHOWCASE SECTION */}
+     
+
       <div className="islandShowcase">
         <div className="islandImgGroup">
           <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />

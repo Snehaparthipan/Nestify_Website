@@ -347,10 +347,23 @@ body{
 .div1{
     border: 1px solid grey;
     /* margin-left: 130px; */
-    width: 80%;
+    width: 90%;
     margin: 10px;
 }
 .div1:hover{
     border: none;
-    border: 5px solid blue;
+    border: 3px solid rgba(0, 0, 255, 0.751);
+}
+.part{
+    font-weight: bold;
+    padding-left: 20px;
+}
+.part i{
+   
+    padding: 20px;
+    
+}
+.div1 div{
+    padding: 20px;
+    line-height: 30px;
 }

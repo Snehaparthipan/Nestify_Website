@@ -23,7 +23,7 @@
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
- color: white;
+ color: black;
   letter-spacing: 1px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -42,7 +42,7 @@
 
 .nav-item {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 500;
   position: relative;
   padding: 8px 0;
@@ -73,7 +73,7 @@
   border: none;
   cursor: pointer;
   font-weight: 500;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -110,7 +110,7 @@
 .drop-item {
   padding: 12px 20px;
   text-decoration: none;
-  color: #374151;
+  color: black;
   font-weight: 500;
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -124,7 +124,7 @@
 .cart {
   position: relative;
   font-size: 22px;
-  color: white;
+  color: blue;
   margin-left: 20px;
   transition: color 0.3s;
 }
@@ -168,7 +168,7 @@
 .wishlist {
   position: relative;
   font-size: 22px;
-  color: white;
+  color: red;
   margin-left: 15px;
   transition: color 0.3s;
 }

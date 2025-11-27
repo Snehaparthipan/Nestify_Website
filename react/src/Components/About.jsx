@@ -54,6 +54,7 @@ export default function About() {
     return () => clearInterval(timer);
   }, [current]);
 
+  
   return (
     <>
       <div className={`hero-container ${loaded ? "fade-in" : ""}`}>

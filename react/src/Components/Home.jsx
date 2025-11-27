@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="body">
     <div className="ban">
-        <img src="https://i.postimg.cc/tCcjNdV6/img4.jpg" alt="" />
+        <img src="https://i.postimg.cc/tCcjNdV6/img4.jpg" alt="" style={{width:'100%'}}/>
     </div>
     <div className="whycontainer">
       <h2>Why choose us</h2>

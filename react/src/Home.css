@@ -273,11 +273,11 @@
 }
 
 /* home */
-.ban{
-  width: auto;
-  object-fit: contain;
-  margin: 1px;
-  overflow-x: hidden;
+.ban {
+  width: 100%;
+  
+  object-fit: cover;   
+  display: block;      
 }
 /* whychooseus */
 .whycontainer {

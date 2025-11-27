@@ -14,31 +14,38 @@ export default function Dinningroom() {
     <>
       <div className="topBannerImage">
         <img
-          src="https://i.postimg.cc/ZRyzm44K/island2.jpg"
+          src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
           alt=""
           style={{ width: "100%", height: "610px" }}
         />
         <div className="topBannerTextBox">
           <h1>
-            Design the Heart of Your Home <br />
-            With a Kitchen That Reflects You
+            Dining Room Designs <br />
+            That Fit Your Modern Lifestyle
           </h1>
         </div>
       </div>
 
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img
+            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
+            alt="Island 1"
+          />
+          <img
+            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
+            alt="Island 2"
+          />
         </div>
 
         <div className="islandInfoBox">
-          <h2>Island Kitchen</h2>
+          <h2>Bar counters</h2>
           <p>
-            Island kitchen series of modern designs from NESTIFY offers you a
-            wide range of selections to help the customer get the best idea.
-            These are different from the traditional style and towards the new
-            trends.
+            Most of the modern houses have a bar counter unit assembled at the
+            dining room itself. It not only serves as a bar counter unit, but
+            also acts as a prestigious decorative unit too. Avail the bar
+            counter units to be assembled anywhere in India from NESTIFY Home
+            Interiors.
           </p>
 
           <button className="viewMoreBtn">view More</button>
@@ -46,33 +53,48 @@ export default function Dinningroom() {
       </div>
       <div className="islandShowcase">
         <div className="islandInfoBox">
-          <h2>L Shape Kitchen</h2>
+          <h2>Crockery Shelf</h2>
           <p>
-            L-shaped kitchens from NESTIFY are 100% customized to fit the space.
-            Various options are given below which can further be modified and
-            made as per a design finalized.
+            A crockery shelf enables you to arrange your crockery items in a
+            prestigious way. Dining rooms will be beautified when you have a
+            customized crockery shelf in it. Choose from the wide range of
+            crockery shelf designs from NESTIFY.
           </p>
 
           <button className="viewMoreBtn">view More</button>
         </div>
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img
+            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
+            alt="Island 1"
+          />
+          <img
+            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
+            alt="Island 2"
+          />
         </div>
       </div>
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img
+            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
+            alt="Island 1"
+          />
+          <img
+            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
+            alt="Island 2"
+          />
         </div>
 
         <div className="islandInfoBox">
-          <h2>Parallel Kitchen</h2>
+          <h2>Dining Table</h2>
           <p>
-            Parallel Kitchen Parallel kitchen is the concept of making cabinets
-            on both the longer sides, especially as per the suitability to the
-            space measured. Our interior designer would be able to help you
-            decide the shape, color, and finish by giving suggestions.
+            As the dining table is a prominent piece of furniture for the daily
+            use of family members, its style and durability is a matter of
+            concern for all. NESTIFY makes suitable dining tables as part of
+            home interior projects undertaken. Most modern styles can be
+            integrated into the durable materials of laminated hardwood fiber
+            board and glass.
           </p>
 
           <button className="viewMoreBtn">view More</button>
@@ -80,22 +102,28 @@ export default function Dinningroom() {
       </div>
       <div className="islandShowcase">
         <div className="islandInfoBox">
-          <h2>Straight Kitchen</h2>
+          <h2>Wash</h2>
           <p>
-            Big space can accommodate a straight kitchen with differences from
-            commonly used styles. Best of the efforts are made by our team of
-            interior designers to provide unique ideas and concepts in making
-            modular kitchens to suit the space and match with the house.
+            A wash counter is an inevitable part of a dining room and when you
+            can get it customized as per your needs and requirements it seems to
+            be much more interesting. Make a wash counter unit that fits your
+            space and keep your head straight while the guest arrives.
           </p>
 
           <button className="viewMoreBtn">view More</button>
         </div>
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img
+            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
+            alt="Island 1"
+          />
+          <img
+            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
+            alt="Island 2"
+          />
         </div>
       </div>
-        <Footer />
+      <Footer />
     </>
   );
     

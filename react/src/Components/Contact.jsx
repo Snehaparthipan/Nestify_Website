@@ -1,7 +1,7 @@
 import React,{useState}from 'react'
 import Footer from './Footer'
 
-export default function Contact() {
+export default function Contact({setOut}) {
   const [state, setState] = useState({
     name: "",
     age: "",
@@ -14,9 +14,9 @@ export default function Contact() {
     setState({ ...state, [e.target.name]: e.target.value });
   }
 
-  // function getsubmit() {
-  //   setOut(state);
-  // }
+  function getsubmit() {
+    setOut(state);
+  }
   return (
     <div className='body'>
       <div className="form-wrapper" style={{margin:'100px 0px 0px 0px'}}>
@@ -62,10 +62,10 @@ export default function Contact() {
           onChange={getinput}
         />
 
-        <button className="submit-btn">
+        <button className="submit-btn" onClick={getsubmit}>
           Submit
         </button>
-        {/* onClick={getsubmit} */}
+        
       </div>
     </div>
      <Footer/>

@@ -1,5 +1,6 @@
 import React from "react";
 import Accordian from "./Accordian";
+import { Link } from "react-router-dom";
 
 
 const data = [
@@ -15,7 +16,7 @@ export default function Home() {
         <img src="https://i.postimg.cc/tCcjNdV6/img4.jpg" alt="" style={{width:'100%'}}/>
     </div>
     <div className="whycontainer">
-      <h2>Why choose us</h2>
+      <h1>Why choose us</h1>
       <p>India’s only truly end to interior design agency bringing your dream home in reality</p>
       <div className="why-cards">
         {data.map((item, index) => (
@@ -33,10 +34,29 @@ export default function Home() {
             <p>schedule a visit to our show homes to see what we can do!</p>
             <button className="getbtn">Get Started</button>
         </div>
-        
+    <Accordian/>
+    <div className="service">
+          <h1>Our Sevices</h1>
+          <div className="grid">
+          <div className="card1">
+            <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="" />
+            <h4>Modular Kitchen</h4>
+            <button><Link className="view" to="/kitchen">view design</Link></button>
+          </div>
+           <div className="card1">
+            <img src="https://i.postimg.cc/85GmpbVS/liv-hero.jpg" alt="" />
+            <h4>Laxury Living Room</h4>
+            <button><Link className="view" to="/living">view design</Link></button>
+          </div>
+           <div className="card1">
+            <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
+            <h4>Master Bedroom</h4>
+            <button><Link className="view" to="/bedroom">view design</Link></button>
+          </div>
+          </div>
+        </div>
 
     </div>
-    <Accordian/>
     </div>
     
   );

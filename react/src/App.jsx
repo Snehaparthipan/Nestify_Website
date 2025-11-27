@@ -8,26 +8,28 @@ import About from './Components/About'
 import Categories from './Components/Categories'
 import Contact from './Components/Contact'
 import './Home.css'
+import Kitchen from './Components/Kitchen'
 
 
 function App() {
   return (
     <>
-    <div className='body'>
-      <BrowserRouter>
-    <Navbar/>
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/categories' element={<Categories/>}/>
-      <Route path='/contact' element={<Contact/>}/>
-    </Routes>
-    </BrowserRouter>
-    </div>
-    
-      
+      <div className="body">
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/kitchen" element={<Kitchen />} />
+            <Route path="/bedroom" element={<Bedroom />} />
+            <Route path="/dining" element={<Dining Room />} />
+            <Route path="/living" element={<Living Room />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
-  )
+  );
 }
 
 export default App

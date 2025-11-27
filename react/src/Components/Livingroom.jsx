@@ -5,6 +5,7 @@ export default function Livingroom() {
   return (
     <div>
       <Footer/>
+      <h2>hi</h2>
     </div>
   )
 }

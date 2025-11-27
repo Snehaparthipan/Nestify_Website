@@ -25,13 +25,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="topBannerTextBox">
-        <h1>
-          Design the Heart of Your Home <br />
-          With a Kitchen That Reflects You
-        </h1>
-      </div>
-
      
 
       <div className="islandShowcase">

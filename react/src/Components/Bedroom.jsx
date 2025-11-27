@@ -43,7 +43,7 @@ export default function Bedroom() {
             required.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+          <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -57,7 +57,7 @@ export default function Bedroom() {
             requirements anywhere in India as part of your bedroom interior.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
         <div className="islandImgGroup">
           <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
@@ -80,7 +80,7 @@ export default function Bedroom() {
             theme of the bedroom.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
       </div>
       <Footer style={{ margin: "-100px 0px 0px 0px" }} />

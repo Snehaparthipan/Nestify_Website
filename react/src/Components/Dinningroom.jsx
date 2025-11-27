@@ -48,7 +48,7 @@ export default function Dinningroom() {
             Interiors.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -61,7 +61,7 @@ export default function Dinningroom() {
             crockery shelf designs from NESTIFY.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
         <div className="islandImgGroup">
           <img
@@ -97,7 +97,7 @@ export default function Dinningroom() {
             board and glass.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -110,7 +110,7 @@ export default function Dinningroom() {
             space and keep your head straight while the guest arrives.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
         <div className="islandImgGroup">
           <img

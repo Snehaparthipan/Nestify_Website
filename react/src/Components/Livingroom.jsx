@@ -47,7 +47,7 @@ export default function Livingroom() {
             limitations.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -60,7 +60,7 @@ export default function Livingroom() {
             to display of television, music system, video player etc.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+          <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
         <div className="islandImgGroup">
           <img
@@ -90,7 +90,7 @@ export default function Livingroom() {
             created but not limited only to these.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -104,7 +104,7 @@ export default function Livingroom() {
             styles of reputed brands are made available in our collection.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
         <div className="islandImgGroup">
           <img
@@ -119,3 +119,4 @@ export default function Livingroom() {
     </>
   );
 }
+

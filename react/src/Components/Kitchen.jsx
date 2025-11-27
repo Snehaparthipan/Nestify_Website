@@ -56,7 +56,7 @@ export default function Kitchen() {
             made as per a design finalized.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+          <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
         <div className="islandImgGroup">
           <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
@@ -78,7 +78,7 @@ export default function Kitchen() {
             decide the shape, color, and finish by giving suggestions.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -91,7 +91,7 @@ export default function Kitchen() {
             modular kitchens to suit the space and match with the house.
           </p>
 
-          <button className="viewMoreBtn">view More</button>
+           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
         </div>
         <div className="islandImgGroup">
           <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />

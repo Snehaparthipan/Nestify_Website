@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import React from "react";
 import Footer from "./Footer";
 
 
-export default function Hero() {
+export default function Bedroom() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -84,5 +83,10 @@ export default function Hero() {
           <button className="viewMoreBtn">view More</button>
         </div>
       </div>
-      <div>
- 
+        <Footer />
+
+    </>
+  );
+   
+  
+}

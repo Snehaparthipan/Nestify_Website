@@ -8,14 +8,7 @@ import About from './Components/About'
 import Categories from './Components/Categories'
 import Contact from './Components/Contact'
 import './Home.css'
-<<<<<<< HEAD
 // import Kitchen from './Components/Kitchen'
-=======
-import Kitchen from './Components/Kitchen'
-import Bedroom from './Components/Bedroom'
-import Dinningroom from "./Components/Dinningroom";
-import Livingroom from "./Components/Livingroom";
->>>>>>> ddfc5669775d18a49eb5d22ef55996372731ad4a
 
 
 function App() {

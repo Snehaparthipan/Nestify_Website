@@ -35,15 +35,15 @@ export default function Footer() {
       </div>
       
     <footer className="footer">
-      <div className="footer-top">
-        <div className="social-icons">
+      <div className="footertop">
+        <div className="ficons">
           <a href="#"><i className="fab fa-facebook-f"></i></a>
           <a href="#"><i className="fab fa-pinterest"></i></a>
           <a href="#"><i className="fab fa-instagram"></i></a>
           <a href="#"><i className="fab fa-twitter"></i></a>
         </div>
 
-        <div className="footer-menu">
+        <div className="fmenu">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
@@ -54,7 +54,7 @@ export default function Footer() {
           
         </div>
 
-        <div className="footer-sub">
+        <div className="footersub">
           <Link to="/living">Living Room</Link>
           <span>|</span>
           <Link to="/bedroom">Bed Room</Link>
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer-bottom">
+      <div className="footerbottom">
         <small>© NESTIFY INTERRIOR DESIGN  | ALL RIGHTS RESERVED</small>
       </div>
     </footer>

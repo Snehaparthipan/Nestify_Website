@@ -27,8 +27,8 @@ export default function Bedroom() {
 
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
-          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
+          <img src="https://i.postimg.cc/nLnJZnDT/bed1.jpg" alt="" />
+          <img src="https://i.postimg.cc/J0HwKnfx/bed2.jpg" alt="" />
         </div>
 
         <div className="islandInfoBox">
@@ -67,14 +67,14 @@ export default function Bedroom() {
           </button>
         </div>
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
-          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
+          <img src="https://i.postimg.cc/T3JPn7qx/unit.jpg" alt="" />
+          <img src="https://i.postimg.cc/05K2V2dt/unit1.jpg" alt="" />
         </div>
       </div>
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt=" " />
-          <img src="https://i.postimg.cc/tgqg91MQ/bed-hero.jpg" alt="" />
+          <img src="https://i.postimg.cc/3wbYZPyY/wadroob.jpg" alt=" " />
+          <img src="https://i.postimg.cc/QNTx0yNt/wadroob1.jpg" alt="" />
         </div>
 
         <div className="islandInfoBox">

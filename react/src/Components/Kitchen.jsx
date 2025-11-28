@@ -12,10 +12,9 @@ export default function Kitchen() {
 
   return (
     <>
-      
       <div className="topBannerImage">
         <img
-          src="https://i.postimg.cc/ZRyzm44K/island2.jpg"
+          src="https://i.postimg.cc/90xWDY8K/kit-hero-(2).jpg"
           alt=""
           style={{ width: "100%", height: "610px" }}
         />
@@ -27,11 +26,9 @@ export default function Kitchen() {
         </div>
       </div>
 
-     
-
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
+          <img src="https://i.postimg.cc/vTYMzbQh/island1.jpg" alt="Island 1" />
           <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
         </div>
 
@@ -44,7 +41,11 @@ export default function Kitchen() {
             trends.
           </p>
 
-          <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view more</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view more
+            </Link>
+          </button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -56,17 +57,21 @@ export default function Kitchen() {
             made as per a design finalized.
           </p>
 
-          <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img src="https://i.postimg.cc/3N87BYKt/l-kit.jpg" alt="" />
+          <img src="https://i.postimg.cc/mkLRwBb8/l-kit1.jpg" alt="" />
         </div>
       </div>
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img src="https://i.postimg.cc/SRSqrkyV/p-kit.jpg" alt="" />
+          <img src="https://i.postimg.cc/sxjycsVN/p-kit1.jpg" alt="" />
         </div>
 
         <div className="islandInfoBox">
@@ -78,7 +83,11 @@ export default function Kitchen() {
             decide the shape, color, and finish by giving suggestions.
           </p>
 
-           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -91,14 +100,18 @@ export default function Kitchen() {
             modular kitchens to suit the space and match with the house.
           </p>
 
-           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img src="https://i.postimg.cc/j2xKXtsk/s-kit.jpg" alt="Island 1" />
+          <img src="https://i.postimg.cc/Xqj384Vh/s-kit1.jpg" alt="Island 2" />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

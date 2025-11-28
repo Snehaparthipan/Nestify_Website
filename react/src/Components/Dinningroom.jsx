@@ -28,14 +28,8 @@ export default function Dinningroom() {
 
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img
-            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
-            alt="Island 1"
-          />
-          <img
-            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
-            alt="Island 2"
-          />
+          <img src="https://i.postimg.cc/1zFJWFX3/bar.jpg" alt="" />
+          <img src="https://i.postimg.cc/HxGPH2Rz/bar1.jpg" alt="" />
         </div>
 
         <div className="islandInfoBox">
@@ -48,7 +42,11 @@ export default function Dinningroom() {
             Interiors.
           </p>
 
-           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -61,29 +59,21 @@ export default function Dinningroom() {
             crockery shelf designs from NESTIFY.
           </p>
 
-           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
         <div className="islandImgGroup">
-          <img
-            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
-            alt="Island 1"
-          />
-          <img
-            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
-            alt="Island 2"
-          />
+          <img src="https://i.postimg.cc/m2cMNshK/shelf.jpg" alt="" />
+          <img src="https://i.postimg.cc/hjPQJFkg/shelf1.jpg" alt="" />
         </div>
       </div>
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img
-            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
-            alt="Island 1"
-          />
-          <img
-            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
-            alt="Island 2"
-          />
+          <img src="https://i.postimg.cc/pXnh5J13/table.jpg" alt="" />
+          <img src="https://i.postimg.cc/1tt4mGqk/table1.jpg" alt="" />
         </div>
 
         <div className="islandInfoBox">
@@ -97,7 +87,11 @@ export default function Dinningroom() {
             board and glass.
           </p>
 
-           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -110,17 +104,15 @@ export default function Dinningroom() {
             space and keep your head straight while the guest arrives.
           </p>
 
-           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
         <div className="islandImgGroup">
-          <img
-            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
-            alt="Island 1"
-          />
-          <img
-            src="https://i.postimg.cc/43vxcxZn/din-hero-(2).jpg"
-            alt="Island 2"
-          />
+          <img src="https://i.postimg.cc/CM9C25yz/wash.jpg" alt="" />
+          <img src="https://i.postimg.cc/J0XX83wL/wash1.jpg" alt="" />
         </div>
       </div>
       <Footer />

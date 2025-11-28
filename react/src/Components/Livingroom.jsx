@@ -28,14 +28,8 @@ export default function Livingroom() {
 
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img
-            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
-            alt="Island 1"
-          />
-          <img
-            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
-            alt="Island 2"
-          />
+          <img src="https://i.postimg.cc/3xtdPfyg/center-t.jpg" alt="" />
+          <img src="https://i.postimg.cc/nzDr9H3G/center-t1.jpg" alt="" />
         </div>
 
         <div className="islandInfoBox">
@@ -48,7 +42,11 @@ export default function Livingroom() {
             limitations.
           </p>
 
-           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -61,23 +59,21 @@ export default function Livingroom() {
             to display of television, music system, video player etc.
           </p>
 
-          <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
         <div className="islandImgGroup">
-          <img
-            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
-            alt="Island 1"
-          />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img src="https://i.postimg.cc/P55qzb6x/tv.jpg" alt="" />
+          <img src="https://i.postimg.cc/rs985zxG/tv1.jpg" alt="" />
         </div>
       </div>
       <div className="islandShowcase">
         <div className="islandImgGroup">
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 1" />
-          <img
-            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
-            alt="Island 2"
-          />
+          <img src="https://i.postimg.cc/763DybBc/puja1.jpg" alt="" />
+          <img src="https://i.postimg.cc/65jKKk0T/puja.jpg" alt="" />
         </div>
 
         <div className="islandInfoBox">
@@ -91,7 +87,11 @@ export default function Livingroom() {
             created but not limited only to these.
           </p>
 
-           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
       </div>
       <div className="islandShowcase">
@@ -105,14 +105,15 @@ export default function Livingroom() {
             styles of reputed brands are made available in our collection.
           </p>
 
-           <button className="viewMoreBtn"><Link className="view" to="/Viewmore">view More</Link></button>
+          <button className="viewMoreBtn">
+            <Link className="view" to="/Viewmore">
+              view More
+            </Link>
+          </button>
         </div>
         <div className="islandImgGroup">
-          <img
-            src="https://i.postimg.cc/Wz8Zw7vF/liv-hero.jpg"
-            alt="Island 1"
-          />
-          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="Island 2" />
+          <img src="https://i.postimg.cc/bNF7WQym/sofa.jpg" alt="" />
+          <img src="https://i.postimg.cc/GtXWcDvq/sofa1.jpg" alt="" />
         </div>
       </div>
 

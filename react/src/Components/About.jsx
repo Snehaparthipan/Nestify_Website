@@ -11,13 +11,14 @@ export default function About() {
   const slides = [
     {
       left: {
-        image: "https://i.postimg.cc/Dwf5Y1Q0/sofa1.jpg",
+        image: "https://i.postimg.cc/QNTx0yNt/wadroob1.jpg",
         title: "Installation",
         content:
           "We install your interiors in 5–7 days with expert supervision.",
       },
       right: {
-        image: "https://i.postimg.cc/QMvLpjBS/About1.jpg",
+        image:
+          "https://i.postimg.cc/59npKnPv/Prominance-Homeworks-Brochure-1-Page6-02.png",
         title: "Dedicated Service @ your door step",
         content:
           "We support you even after installation for any service request.",
@@ -26,12 +27,14 @@ export default function About() {
 
     {
       left: {
-        image: "https://i.postimg.cc/QMvLpjBS/About1.jpg",
+        image:
+          "https://i.postimg.cc/QMYpsxz9/Whats-App-Image-2025-11-28-at-6-15-49-AM.jpg",
         title: "Think Quality, Think Homworks",
         content: "Our experts plan your interiors with perfect measurements.",
       },
       right: {
-        image: "https://i.postimg.cc/QMvLpjBS/About1.jpg",
+        image:
+          "https://i.postimg.cc/K8zjbrhJ/Whats-App-Image-2025-11-28-at-6-18-55-AM.jpg",
         title: "A Perfect Pallete",
         content: "Our team is available anytime to help solve your concerns.",
       },
@@ -39,12 +42,14 @@ export default function About() {
 
     {
       left: {
-        image: "https://i.postimg.cc/QMvLpjBS/About1.jpg",
+        image:
+          "https://i.postimg.cc/Bvp1ZwPn/Whats-App-Image-2025-11-28-at-6-12-48-AM.jpg",
         title: "Consummate Professionals",
         content: "Our experts plan your interiors with perfect measurements.",
       },
       right: {
-        image: "https://i.postimg.cc/QMvLpjBS/About1.jpg",
+        image:
+          "https://i.postimg.cc/SKSrkPxm/Whats-App-Image-2025-11-28-at-6-14-43-AM.jpg",
         title: "Top Notch Infrastructure",
         content: "Our team is available anytime to help solve your concerns.",
       },

@@ -14,30 +14,35 @@ import Dinningroom from "./Components/Dinningroom";
 import Livingroom from "./Components/Livingroom";
 import Viewmore from './Components/Viewmore'
 import Success from './Components/Success'
+import { CartProvider, Cart } from "./Components/CartContext";
+
+
 
 
 function App() {
   return (
     <>
       <div className="body">
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/kitchen" element={<Kitchen />} />
-            <Route path ="/bedroom" element={<Bedroom/>}/>
-            <Route path= "/dining" element={<Dinningroom/>}/>
-            <Route path ="/living" element={<Livingroom/>}/>
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/Viewmore" element={<Viewmore/>} />
-            <Route path="/success" element={<Success/>} />
-
-          </Routes>
-        </BrowserRouter>
+        <CartProvider>
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/kitchen" element={<Kitchen />} />
+              <Route path="/bedroom" element={<Bedroom />} />
+              <Route path="/dining" element={<Dinningroom />} />
+              <Route path="/living" element={<Livingroom />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/Viewmore" element={<Viewmore />} />
+              <Route path="/success" element={<Success />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+          </BrowserRouter>
+        </CartProvider>
       </div>
     </>
-  )
+  );
 }
 
 export default App

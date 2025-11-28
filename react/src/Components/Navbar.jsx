@@ -14,7 +14,7 @@ export default function Navbar() {
     <div className="nav-container">
       <nav className="navbar">
         <h1 className="logo">Nestify</h1>
-
+          <input type="text"  placeholder="search" className="searchbar"/>
         <ul className="nav-links">
           <Link className="nav-item" to="/">Home</Link>
           <Link className="nav-item" to="/about">About</Link>

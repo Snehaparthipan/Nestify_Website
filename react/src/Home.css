@@ -1,6 +1,14 @@
 body{
   overflow-x: hidden;
 }
+.searchbar{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+}
 .nav-container {
   width: 100%;
   font-family: "Poppins", sans-serif;

@@ -531,7 +531,8 @@ body{
 
 .title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: -20px;
+  /* margin-bottom: 20px; */
   font-size: 26px;
   font-weight: 600;
   color: #333;

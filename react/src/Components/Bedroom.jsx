@@ -94,7 +94,7 @@ export default function Bedroom() {
           </button>
         </div>
       </div>
-      <Footer style={{ margin: "-110px 0px 0px 0px" }} />
+      <Footer style={{ margin: "-100px 0px 0px 0px" }} />
     </>
   );
 }

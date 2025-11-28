@@ -50,7 +50,7 @@ export default function Contact() {
 
   return (
     <div className='body'>
-      <div className="form-wrapper" style={{ margin: '100px 0px 0px 0px' }}>
+      <div className="form-wrapper" style={{ margin: '50px 0px 0px 0px' }}>
         <div className="form-card">
           <h2 className="title">Get in Touch</h2>
 

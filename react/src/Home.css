@@ -333,7 +333,8 @@ body{
 .getstarted img{
   height: 450px;
   width: 100%;
-  margin: 10px;
+  margin: 1px;
+  border-radius: 20px;
 }
 .insidecard{
   color: white;
@@ -681,4 +682,18 @@ input:focus {
 
 .consbtn:disabled {
   background: #93c5fd;
+}
+
+
+.apicard{
+  margin-top: 450px;
+}
+.apih1{
+  text-align: center;
+}
+.usedetail{
+   display: flex;
+}
+.userimg{
+  border-radius: 60px;
 }

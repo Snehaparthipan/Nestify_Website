@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </div>
         <Callapi/>
-        <div style={{margin:'400px 0px 0px 0px'}}>
+        <div style={{margin:'100px 0px 0px 0px'}}>
           <Footer/>
         </div>
     

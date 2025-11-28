@@ -16,7 +16,7 @@ function Callapi() {
 
       <div className="usedetail">
         {users.map((user, index) => (
-          <div key={index}>
+          <div className="apiusercards" key={index}>
             <img
               src={user.picture.large}
               alt="profile"
@@ -25,7 +25,7 @@ function Callapi() {
             <h3>
               {user.name.last}
             </h3>
-            <p >{user.email}</p>
+            <p className="email" >{user.email}</p>
           </div>
         ))}
       </div>

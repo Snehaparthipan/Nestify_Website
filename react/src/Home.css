@@ -1,6 +1,9 @@
 body{
   overflow-x: hidden;
 }
+*{
+  font-family: sans-serif;
+}
 .searchbar{
     width: 200px;
     height: 30px;
@@ -439,7 +442,7 @@ body{
     text-align: center;
 }
 .signup-button{
-    background-color:purple;
+    background-color:#023047;
     border: none;
     margin: 20px;
     width: 150px;
@@ -684,17 +687,35 @@ input:focus {
 .consbtn:disabled {
   background: #93c5fd;
 }
-
+/* API CALLING */
 
 .apicard{
+  margin: 50px;
   margin-top: 450px;
+  
 }
 .apih1{
   text-align: center;
 }
 .usedetail{
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(4,250px);
+   gap: 50px;
+   /* transition: 0.5s ease; */
+}
+.apiusercards{
+  margin-top: 20px;
+  width: auto;
+  height: auto;
+  background-color:whitesmoke;
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
+  transition: 0.3s ease;
 }
 .userimg{
   border-radius: 60px;
+}
+.email{
+  color:darkblue;
 }

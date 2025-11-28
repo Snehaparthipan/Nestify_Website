@@ -1,7 +1,9 @@
 body {
   overflow-x: hidden;
 }
-
+*{
+  font-family: sans-serif;
+}
 /* about */
 .hero-container {
   display: flex;
@@ -271,7 +273,7 @@ body {
 .islandInfoBox h2 {
   font-size: 34px;
   font-weight: 700;
-  color: #7a1fa2;
+  color: #023047;
 }
 
 .islandInfoBox p {
@@ -283,7 +285,7 @@ body {
 
 .viewMoreBtn {
   margin-top: 20px;
-  background: #7a1fa2;
+  background: #023047;
   color: #fff;
   padding: 12px 40px;
   border: none;
@@ -294,7 +296,7 @@ body {
 }
 
 .viewMoreBtn:hover {
-  background: #631982;
+  background: #023047;
 }
 
 

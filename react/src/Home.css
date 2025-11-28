@@ -9,6 +9,17 @@ body{
     border-radius: 10px;
     margin: 20px;
 }
+.req{
+  width:150px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  text-decoration: none;
+  color: black;
+  background-color:darkseagreen;
+  border-radius: 5px;
+
+}
 .nav-container {
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -322,7 +333,8 @@ body{
 .getstarted img{
   height: 450px;
   width: 100%;
-  margin: 10px;
+  margin: 1px;
+  border-radius: 20px;
 }
 .insidecard{
   color: white;
@@ -352,6 +364,7 @@ body{
     }
 .div1{
     border: 1px solid grey;
+    transition: border 0.2s;
     /* margin-left: 130px; */
     width: 90%;
     margin: 10px;
@@ -597,3 +610,90 @@ input:focus {
 }
 
 
+
+.consultation-page {
+  margin-top: 70px;
+  min-height: 100vh;
+  background: #f3f4f6; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.consultation-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.consultation-card h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.consultation-card p {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.consultation-card input,
+.consultation-card textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+
+
+.consultation-card textarea {
+  height: 100px;
+}
+
+.consbtn {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #3b82f6; 
+  border: none;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.consbtn:hover {
+  background: #2563eb; 
+}
+
+.consbtn:disabled {
+  background: #93c5fd;
+}
+
+
+.apicard{
+  margin-top: 450px;
+}
+.apih1{
+  text-align: center;
+}
+.usedetail{
+   display: flex;
+}
+.userimg{
+  border-radius: 60px;
+}

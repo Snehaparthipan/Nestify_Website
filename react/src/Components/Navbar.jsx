@@ -15,6 +15,8 @@ export default function Navbar() {
       <nav className="navbar">
         <h1 className="logo">Nestify</h1>
           <input type="text"  placeholder="search" className="searchbar"/>
+          {/* <button className="req">Request Consultent</button> */}
+          <Link className="req" to='/Consultant'>Request Consultent</Link>
         <ul className="nav-links">
           <Link className="nav-item" to="/">Home</Link>
           <Link className="nav-item" to="/about">About</Link>

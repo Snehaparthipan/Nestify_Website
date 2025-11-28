@@ -17,6 +17,7 @@ import Success from './Components/Success'
 import { CartProvider, Cart } from "./Components/CartContext";
 
 
+import Consultant from './Components/Consultant'
 
 
 function App() {
@@ -40,6 +41,21 @@ function App() {
             </Routes>
           </BrowserRouter>
         </CartProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/kitchen" element={<Kitchen />} />
+            <Route path ="/bedroom" element={<Bedroom/>}/>
+            <Route path= "/dining" element={<Dinningroom/>}/>
+            <Route path ="/living" element={<Livingroom/>}/>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/Viewmore" element={<Viewmore/>} />
+            <Route path="/success" element={<Success/>} />
+            <Route path="/Consultant" element={<Consultant/>} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </>
   );

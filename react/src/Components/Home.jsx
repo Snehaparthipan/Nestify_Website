@@ -2,6 +2,9 @@ import React from "react";
 import Accordian from "./Accordian";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import Callapi from "./Callapi";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const data = [
@@ -10,6 +13,12 @@ const data = [
   { icon: <i className="fa-solid fa-heart"></i>, title: "1,00,000+ happy homes" },
   { icon: <i className="fa-solid fa-city"></i>, title: "100+ cities" },
 ];
+
+ const showToastMessage = () => {
+    toast.success("Your Journey Started With Nestify !", {
+      position: "bottom-right"
+    });
+  };
 export default function Home() {
   return (
     <div className="body">
@@ -33,7 +42,8 @@ export default function Home() {
         <div className="insidecard">
             <h1>see. touch. experience.</h1>
             <p>schedule a visit to our show homes to see what we can do!</p>
-            <button className="getbtn">Get Started</button>
+            <button className="getbtn" onClick={showToastMessage}>Get Started</button>
+               <ToastContainer />
         </div>
         </div>
     <Accordian/>
@@ -57,6 +67,7 @@ export default function Home() {
           </div>
           </div>
         </div>
+        <Callapi/>
         <div style={{margin:'400px 0px 0px 0px'}}>
           <Footer/>
         </div>

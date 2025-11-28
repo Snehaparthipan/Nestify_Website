@@ -37,11 +37,12 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/Viewmore" element={<Viewmore />} />
               <Route path="/success" element={<Success />} />
+               <Route path="/Consultant" element={<Consultant/>} />
               <Route path="/cart" element={<Cart />} />
             </Routes>
           </BrowserRouter>
         </CartProvider>
-        <BrowserRouter>
+        {/* <BrowserRouter>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -55,7 +56,7 @@ function App() {
             <Route path="/success" element={<Success/>} />
             <Route path="/Consultant" element={<Consultant/>} />
           </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
       </div>
     </>
   );

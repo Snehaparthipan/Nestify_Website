@@ -1,18 +1,18 @@
-body {
+html, body {
   overflow-x: hidden;
 }
-*{
+* {
   font-family: sans-serif;
 }
-/* about */
+
 .hero-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 100px;
   gap: 40px;
   opacity: 0;
   transition: opacity 0.8s ease-in;
-  margin-bottom: -150px;
 }
 
 .fade-in {
@@ -36,9 +36,8 @@ body {
   color: #555;
   max-width: 520px;
   line-height: 1.6;
-  padding: 10px;
+  padding: 10px 0;
   text-align: justify;
-  margin-top: 0;
 }
 
 .consult-button {
@@ -64,73 +63,69 @@ body {
 .hero-image {
   width: 100%;
   border-radius: 30px;
-  height: 100%;
-  margin: 10px;
-  object-fit: contain;
+  height: auto;
+  margin: 10px 0;
+  object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 70px 40px;
+    gap: 25px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+}
 @media (max-width: 900px) {
   .hero-container {
     flex-direction: column;
-    padding: 90px 30px;
+    padding: 60px 30px;
     text-align: center;
   }
 
   .hero-title {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   .hero-text {
-    margin: 20px auto;
+    margin: 15px auto;
+    padding: 0;
+    width: 100%;
   }
 
   .hero-right {
-    margin-top: 30px;
+    margin-top: 20px;
   }
+
   .hero-image {
-    margin-top: -50px;
-    align-content: center;
-  }
-
-  .consult-button {
-    margin-top: -20px;
-  }
-  .second-section {
-    display: flex;
-    flex-direction: row !important;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 10px;
-    gap: 15px;
-    margin-top: 30px;
-  }
-
-  .second-section .hero-image {
     width: 100%;
-    border-radius: 12px;
-    margin: 0;
+    margin-top: 10px;
     object-fit: cover;
   }
 
-  .second-section .hero-title {
-    font-size: 22px;
-    margin-top: 50px;
-  }
-
-  .second-section .hero-text {
-    font-size: 12px;
-    line-height: 1.4;
-    margin: 0;
-    padding: 0;
-    text-align: justify;
-  }
-
-  .second-section .consult-button {
-    margin-top: 12px;
-    padding: 10px 20px;
-    font-size: 13px;
+  .consult-button {
+    width: 100%;
+    margin-top: 20px;
   }
 }
+
+@media (max-width: 500px) {
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-text {
+    font-size: 13px;
+  }
+
+  .consult-button {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
 
 .slider-container {
   width: 100%;
@@ -298,6 +293,59 @@ body {
 .viewMoreBtn:hover {
   background: #023047;
 }
+
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 900px) {
+
+  /* Top Banner */
+  .topBannerImage {
+    height: auto !important;
+    position: relative;
+  }
+  .topBannerTextBox {
+    bottom: 40px;
+    left: 20px;
+    max-width: 90%;
+    text-align: center;
+  }
+  .topBannerTextBox h1 {
+    font-size: 28px;
+  }
+
+  /* Island Showcase */
+  .islandShowcase {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .islandImgGroup {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .islandImgGroup img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .islandInfoBox {
+    max-width: 100%;
+    text-align: center;
+  }
+  .islandInfoBox h2 {
+    font-size: 24px;
+  }
+  .islandInfoBox p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .viewMoreBtn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
 
 
 /* Main container */

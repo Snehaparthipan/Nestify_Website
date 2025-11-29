@@ -6,17 +6,9 @@ export default function Navbar() {
   const [desktopDropdown, setDesktopDropdown] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(false);
 
-  const [wishlistOpen, setWishlistOpen] = useState(false);
-  const [cartOpen, setCartOpen] = useState(false);
-
-  const [cartItems] = useState([]);
-  const [wishlistItems] = useState([]);
-
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
     setMobileDropdown(false);
-    setCartOpen(false);
-    setWishlistOpen(false);
   };
 
   return (
@@ -24,7 +16,7 @@ export default function Navbar() {
       <nav className="navbar">
         <h1 className="logo">Nestify</h1>
 
-        <input type="text" placeholder="search" className="searchbar" />
+        {/* <input type="text" placeholder="search" className="searchbar" /> */}
         <Link className="req" to="/Consultant">Request Consultant</Link>
 
         <ul className="nav-links">
@@ -46,12 +38,6 @@ export default function Navbar() {
           </div>
 
           <Link className="nav-item" to="/contact">Contact</Link>
-
-
-          <i className="fa-solid fa-cart-shopping cart"
-            onClick={() => { setCartOpen(!cartOpen); setWishlistOpen(false); }}></i>
-          <i className="fa-solid fa-heart wishlist"
-            onClick={() => { setWishlistOpen(!wishlistOpen); setCartOpen(false); }}></i>
         </ul>
 
         <button className="menu-btn" onClick={toggleMobileMenu}>
@@ -59,22 +45,10 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {cartOpen && (
-        <ul className="cart-dropdown">
-          {cartItems.length === 0 ? <li>Your cart is empty!</li> : cartItems.map((i, idx) => <li key={idx}>{i.name}</li>)}
-        </ul>
-      )}
-
-
-      {wishlistOpen && (
-        <ul className="wishlist-dropdown">
-          {wishlistItems.length === 0 ? <li>Your wishlist is empty!</li> : wishlistItems.map((i, idx) => <li key={idx}>{i.name}</li>)}
-        </ul>
-      )}
-
+      {/* Mobile Menu */}
       {mobileMenu && (
         <ul className="mobile-menu show">
-          <input type="text" placeholder="search" className="searchbar-mobile" />
+          {/* <input type="text" placeholder="search" className="searchbar-mobile" /> */}
           <Link className="req-mobile" to="/Consultant">Request Consultant</Link>
 
           <Link className="mobile-item" to="/" onClick={toggleMobileMenu}>Home</Link>
@@ -94,9 +68,6 @@ export default function Navbar() {
           )}
 
           <Link className="mobile-item" to="/contact" onClick={toggleMobileMenu}>Contact</Link>
-
-          <i className="mobile-item fa-solid fa-cart-shopping" onClick={() => setCartOpen(!cartOpen)}></i>
-          <i className="mobile-item fa-solid fa-heart" onClick={() => setWishlistOpen(!wishlistOpen)}></i>
         </ul>
       )}
     </div>

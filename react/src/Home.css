@@ -130,57 +130,6 @@ body {
   border-radius: 5px;
 }
 
-.cart, .wishlist {
-  position: relative;
-  font-size: 22px;
-  transition: color 0.3s;
-}
-.cart {
-  color: blue;
-}
-.wishlist {
-  color: red;
-}
-.cart:hover {
-  color: blue;
-}
-.wishlist:hover {
-  color: #e91e63;
-}
-
-
-.cart-dropdown,
-.wishlist-dropdown {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  width: 250px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  padding: 10px;
-  z-index: 1000;
-  list-style: none;
-  border: 1px solid #ddd;
-}
-.wishlist-dropdown {
-  right: 60px;
-}
-.cart-dropdown li,
-.wishlist-dropdown li {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-  font-size: 14px;
-  color: #333;
-}
-.cart-dropdown li:last-child,
-.wishlist-dropdown li:last-child {
-  border-bottom: none;
-}
-.cart-dropdown li:hover,
-.wishlist-dropdown li:hover {
-  background-color: #f9f9f9;
-}
 
 
 .menu-btn {
@@ -222,7 +171,20 @@ body {
 
 .mobile-menu.show {
   display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 70px); 
+  overflow-y: auto; 
+  background-color: #ffffff;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  left: 0;
+  padding: 20px 0;
+  z-index: 999;
+  border-top: 1px solid #e5e7eb;
+  box-sizing: border-box;
 }
+
 
 .mobile-dropdown.show {
   display: flex;
@@ -252,14 +214,14 @@ body {
 }
 
 
-.searchbar-mobile {
+/* .searchbar-mobile {
   width: 90%;
   margin: 10px auto;
   display: block;
   padding: 8px;
   border-radius: 8px;
   border: 1px solid #ccc;
-}
+} */
 
 .req-mobile {
   display: block;
@@ -273,15 +235,27 @@ body {
   border-radius: 5px;
 }
 
-.mobile-menu.show {
+.mobile-dropdown {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
+  padding-left: 10px;
+  gap: 5px;
 }
 
-.mobile-dropdown.show {
-  display: flex;
-  flex-direction: column;
+.mobile-dropdown .drop-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  border-radius: 5px;
 }
+
+.mobile-dropdown .drop-item:hover {
+  background-color: #f3f4f6;
+  color: #2563eb;
+}
+
 
 
 

@@ -203,8 +203,30 @@ html, body {
 }
 
 @media (max-width: 900px) {
+  .hero-title{
+    margin-top: 50px;
+  }
   .slider-container {
     margin-top: 200px;
+  }
+  .slide-title{
+    font-size: 15px;
+    padding: 0px auto;
+  }
+  .slide-card{
+    width: 30%;
+  }
+  .slide-content{
+    font-size: 10px;
+    text-align: justify;
+  }
+  .left{
+    font-size: 30px;
+    margin: auto auto auto -40px;
+  }
+  .right{
+    font-size: 30px;
+   margin: auto  -40px auto auto;
   }
 }
 
@@ -294,8 +316,6 @@ html, body {
   background: #023047;
 }
 
-
-/* ------------------ RESPONSIVE ------------------ */
 @media (max-width: 900px) {
 
   /* Top Banner */
@@ -313,7 +333,7 @@ html, body {
     font-size: 28px;
   }
 
-  /* Island Showcase */
+
   .islandShowcase {
     flex-direction: column !important;
     align-items: center;
@@ -348,7 +368,7 @@ html, body {
 
 
 
-/* Main container */
+
 .island-container {
   padding: 40px;
   font-family: "Poppins", sans-serif;
@@ -356,7 +376,7 @@ html, body {
   margin-top: 120px;
 }
 
-/* Title */
+
 .title {
   font-size: 40px;
   margin-top: 100px;
@@ -364,7 +384,7 @@ html, body {
   font-weight: 700;
 }
 
-/* Paragraph */
+
 .description {
   margin-bottom: 30px;
   color: #555;
@@ -373,14 +393,14 @@ html, body {
   font-size: 16px;
 }
 
-/* Grid layout */
+
 .kitchen-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-/* Card box */
+
 .kitchen-card {
   background: #fff;
   border-radius: 12px;
@@ -390,27 +410,26 @@ html, body {
   padding-bottom: 20px;
 }
 
-/* Hover */
 .kitchen-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Image */
+
 .kitchen-img {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
 
-/* Name */
+
 .kitchen-name {
   padding: 15px;
   font-size: 20px;
   font-weight: 600;
 }
 
-/* Button */
+
 .add-btn {
   width: 90%;
   margin: 0 auto;
@@ -428,4 +447,117 @@ html, body {
 .add-btn:hover {
   background: #000;
   transform: scale(1.03);
+}
+
+
+
+
+.addBtn {
+  margin: 10px;
+  padding: 10px 18px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background: #444;
+}
+
+.addedBtn {
+  margin: 10px;
+  padding: 10px 18px;
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: default;
+}
+.viewmore-container {
+  padding: 110px 80px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+
+.viewcard {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: .3s;
+}
+
+.viewcard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.viewcard:hover {
+  transition: 0.3 ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+.conbtn{
+  background-color: #023047;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .viewmore-container {
+    padding: 50px 40px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .viewmore-container {
+    padding: 20px;
+    margin: 60px auto;
+  }
+
+  .viewcard img {
+    height: 200px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .contactBtn {
+    width: 80%;
+    font-size: 15px;
+  }
 }

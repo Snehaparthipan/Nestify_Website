@@ -1,53 +1,53 @@
-import React, { useEffect, useState, useContext } from "react";
-import { CartContext } from "./CartContext.jsx";
+import React from "react";
 import { Link } from "react-router-dom";
 
-export default function IslandKitchen() {
-  const [kitchens, setKitchens] = useState([]);
-  const { addToCart } = useContext(CartContext);
-
-  useEffect(() => {
-    const data = [
-      { name: "Kitchen", img: "https://i.postimg.cc/ZRyzm44K/island2.jpg" },
-      { name: "Kitchen", img: "https://i.postimg.cc/ZRyzm44K/island2.jpg" },
-      { name: "Kitchen", img: "https://i.postimg.cc/ZRyzm44K/island2.jpg" },
-      { name: "Kitchen", img: "https://i.postimg.cc/ZRyzm44K/island2.jpg" },
-    ];
-    setKitchens(data);
-  }, []);
-
-  const handleAdd = (item) => {
-    addToCart(item); 
-    alert("Added to Cart!");
-  };
-
+export default function Viewmore() {
   return (
-    <div className="island-container" >
-      <h1 className="title">Island Kitchen</h1>
+    <div className="viewmore-container">
 
-      <p className="description">
-        Kitchens should be elegant looking as well as serve our purpose of
-        storage, convenient cooking, and comfortable living. Below are some
-        island kitchen models displayed for inspiration.
-      </p>
-
-      <div className="kitchen-grid">
-        {kitchens.map((item, index) => (
-          <div key={index} className="kitchen-card">
-            <img src={item.img} className="kitchen-img" />
-
-            <div className="kitchen-name">{item.name}</div>
-
-            <button className="add-btn" onClick={() => handleAdd(item)}>
-              Add Design
-            </button>
-          </div>
-        ))}
+      <div className="header">
+        <h1>More Kitchen Designs</h1>
+        <p>Explore premium designs crafted for modern homes</p>
       </div>
+
+      <div className="gallery">
+        <div className="viewcard">
+          <img src="https://i.postimg.cc/vTYMzbQh/island1.jpg" alt="" />
+          <h3>Modern Island Kitchen</h3>
+          <button  className="conbtn"><Link to='/contact' className="link">Contact</Link></button>
+        </div>
+
+        <div className="viewcard">
+          <img src="https://i.postimg.cc/ZRyzm44K/island2.jpg" alt="" />
+          <h3>Premium Island Design</h3>
+          <button  className="conbtn"><Link to='/contact' className="link">Contact</Link></button>
+        </div>
+
+        <div className="viewcard">
+            <img src="https://i.postimg.cc/3N87BYKt/l-kit.jpg" alt="" />
+            <h3>L Shape Kitchen</h3>
+            <button  className="conbtn"><Link to='/contact' className="link">Contact</Link></button>
+        </div>
+
+        <div className="viewcard">
+          <img src="https://i.postimg.cc/mkLRwBb8/l-kit1.jpg" alt="" />
+          <h3>Compact L Shape Kitchen</h3>
+          <button  className="conbtn"><Link to='/contact' className="link">Contact</Link></button>
+        </div>
+
+        <div className="viewcard">
+          <img src="https://i.postimg.cc/SRSqrkyV/p-kit.jpg" alt="" />
+          <h3>Parallel Kitchen</h3>
+          <button  className="conbtn"><Link to='/contact' className="link">Contact</Link></button>
+        </div>
+
+        <div className="viewcard">
+          <img src="https://i.postimg.cc/sxjycsVN/p-kit1.jpg" alt="" />
+          <h3>Premium Parallel Kitchen</h3>
+          <button  className="conbtn"><Link to='/contact' className="link">Contact</Link></button>
+        </div>
+      </div>
+
     </div>
   );
 }
-
-
-
-

@@ -158,7 +158,7 @@ const handleLearnMore = () => {
         <h1 className="slider-main-title">What Sets Homworks Apart?</h1>
 
         <div className="arrow left" onClick={prevSlide}>
-          ←
+          <i class="fa-solid fa-angle-left"></i>
         </div>
 
         <div className="two-card-wrapper">
@@ -175,7 +175,7 @@ const handleLearnMore = () => {
           </div>
         </div>
         <div className="arrow right" onClick={nextSlide}>
-          →
+          <i class="fa-solid fa-angle-right"></i>
         </div>
       </div>
       <Footer/>

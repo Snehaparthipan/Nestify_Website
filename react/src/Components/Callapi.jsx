@@ -26,6 +26,7 @@ function Callapi() {
               {user.name.last}
             </h3>
             <p className="email" >{user.email}</p>
+            <p>Exelent work</p>
           </div>
         ))}
       </div>

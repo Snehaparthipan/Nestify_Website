@@ -27,6 +27,7 @@ export default function Navbar() {
             <p className="nav-item drop-btn" onClick={() => setDesktopDropdown(!desktopDropdown)}>
               Categories ▾
             </p>
+            {/* CHECK on Useref hook => click outside to close */}
             {desktopDropdown && (
               <ul className="dropdown-menu">
                 <Link className="drop-item" to="/kitchen">Kitchen</Link>

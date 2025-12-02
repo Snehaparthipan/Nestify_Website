@@ -30,7 +30,7 @@ export default function Consultant() {
       setEmail("");
       setMessage("");
       setIsSubmitting(false);
-    }, 1500);
+    }, 2000);
   };
 
   return (

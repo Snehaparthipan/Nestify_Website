@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [desktopDropdown, setDesktopDropdown] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(false);
+
+  const [showConsultant, setShowConsultant] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowConsultant(true);
+    }, 6000); 
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
@@ -16,18 +26,24 @@ export default function Navbar() {
       <nav className="navbar">
         <h1 className="logo">Nestify</h1>
 
-        {/* <input type="text" placeholder="search" className="searchbar" /> */}
-        <Link className="req" to="/Consultant">Request Consultant</Link>
+        {/* Consultant Button - Desktop */}
+        {showConsultant && (
+          <Link className="req" to="/Consultant">Request Consultant</Link>
+        )}
 
         <ul className="nav-links">
           <Link className="nav-item" to="/">Home</Link>
           <Link className="nav-item" to="/about">About</Link>
 
           <div className="dropdown-wrapper">
-            <p className="nav-item drop-btn" onClick={() => setDesktopDropdown(!desktopDropdown)}>
+            <p
+              className="nav-item drop-btn"
+              onClick={() => setDesktopDropdown(!desktopDropdown)}
+            >
               Categories ▾
             </p>
             {/* CHECK on Useref hook => click outside to close */}
+
             {desktopDropdown && (
               <ul className="dropdown-menu">
                 <Link className="drop-item" to="/kitchen">Kitchen</Link>
@@ -49,13 +65,19 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileMenu && (
         <ul className="mobile-menu show">
-          {/* <input type="text" placeholder="search" className="searchbar-mobile" /> */}
-          <Link className="req-mobile" to="/Consultant">Request Consultant</Link>
+
+          {/* Consultant Button - Mobile */}
+          {showConsultant && (
+            <Link className="reqmobile" to="/Consultant">Request Consultant</Link>
+          )}
 
           <Link className="mobile-item" to="/" onClick={toggleMobileMenu}>Home</Link>
           <Link className="mobile-item" to="/about" onClick={toggleMobileMenu}>About</Link>
 
-          <button className="mobile-item drop-btn" onClick={() => setMobileDropdown(!mobileDropdown)}>
+          <button
+            className="mobile-item drop-btn"
+            onClick={() => setMobileDropdown(!mobileDropdown)}
+          >
             Categories ▾
           </button>
 

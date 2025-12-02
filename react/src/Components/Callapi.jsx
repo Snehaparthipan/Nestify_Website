@@ -6,7 +6,7 @@ function Callapi() {
   useEffect(() => {
     fetch("https://randomuser.me/api/?results=10")
       .then((res) => res.json())
-      .then((data) => setUsers(data.results))
+      .then((data) => setUsers(data.results.slice(0,4)))
       .catch((err) => console.log(err));
   }, []);
 

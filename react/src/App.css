@@ -62,7 +62,7 @@ html, body {
 
 .hero-image {
   width: 100%;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   height: auto;
   margin: 10px 0;
   object-fit: cover;
